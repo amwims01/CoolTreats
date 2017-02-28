@@ -1,0 +1,138 @@
+//1, Hide spoiler
+$(".spoiler span").hide();
+//2, Add a button
+$("spoiler").append("<button>Reveal Spoiler!</button>");
+//3, When button pressed
+$("button").click(function(){
+//3.1, Show spoiler
+  $(".spoiler span").show();
+  //3.2, Get rid of button
+  $(this).remove();
+  });
+
+
+//password
+  <p>
+  <label for="password">Password</label>
+  <input id="password" name="password" type="password">
+  <span>Enter a password longer than 8 characters</span>
+</p>
+<p>
+  <label for="confirm_password">Confirm Password</label>
+  <input id="confirm_password" name="confirm_password" type="password">
+  <span>Please confirm your password</span>
+</p>
+<p>
+  <input type="submit" value="SUBMIT">
+</p>
+
+
+/* =================================
+  Flexbox
+==================================== */
+
+.container {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+
+//css for item boxes
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.35em;
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	background: #e8e9e9;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.container {
+	padding: 10px;
+	background: #fff;
+  border-radius: 5px;
+	margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+}
+.item {
+	color: #fff;
+	padding: 15px;
+	margin: 5px;
+	background: #3db5da;
+	border-radius: 3px;
+}
+
+
+////flex box continued///
+///html///
+<div class="container">
+		<div class="item-1 item">Item 1</div>
+		<div class="item-2 item">Item 2</div>
+		<div class="item-3 item">Item 3</div>
+		<div class="item-4 item">Item 4</div>
+		<div class="item-5 item">Item 5</div>
+		<div class="item-6 item">Item 6</div>
+	</div>
+
+  ///css///
+
+  .container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item{
+  flex-grow: 1;
+}
+
+.item-3 {
+  flex-grow: 2;
+}
+
+
+/* Base Style */
+.body {
+  display: felx;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.row {
+
+
+}
+/* =================================
+  Media Queries--responsive
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header, .main-nav, .row {
+  display: flex;
+}
+
+}
+
+.main-header {
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.col {
+  flex: 1;
+  flex-direction: column;
+}
+
+@media (min-width: 1025px) {
+  .main-header {
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.primary {
+  flex: 2;
+}
+}
