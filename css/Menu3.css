@@ -1,0 +1,121 @@
+
+.product-filter {
+  display: flex;
+  margin: 150px 0 0 0;
+}
+
+.product-filter h2 {
+  line-height: inherit;
+  text-align: center;
+  color: skyblue;
+  font-size: 40px;
+  margin: 25px 0 0 0;
+}
+
+.sort {
+  display: flex;
+  margin: 75px 0 0 0;
+}
+
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-image {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  padding: 2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  display: flex; /* so child elements can use flexbox stuff too! */
+}
+
+.product-info{
+  font-size: 30px;
+  color: #000;
+  line-height: 0%;
+  float: left;
+}
+
+
+#chicken-image {
+  display: flex;
+  margin: 10px 10px 10px 75px;
+  width: 300px;
+  height: 200px;
+}
+
+#watermelon-image {
+  display: flex;
+  margin: 75px 10px 10px 10px;
+  width: 10px;
+  height: 300px;
+  text-align: right;
+
+}
+
+#mustache-image{
+  display: flex;
+  margin: 50px 10px 10px 10px;
+  width: 50px;
+  height: 250px;
+  text-align: left;
+}
+
+#turkey2-image{
+  display: flex;
+  margin: 50px 10px 10px 50px;
+  padding: 10px 20px 10px 20px;
+  height: 300px;
+  width: 5px;
+  text-align: right;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+
+.products .product-card:first-child,
+.products .product-card:nth-child(2) {
+  flex: 2 46%;
+}
+
+/**Media Queries**/
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 21%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    flex: 1 46%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+  .sort {
+    align-self: flex-start;
+  }
+}

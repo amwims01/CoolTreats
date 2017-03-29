@@ -1,81 +1,95 @@
 <!DOCTYPE html>
+<html>
+<head>
+<link rel="normalize.css" href="css/normalize.css">
+<link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/menu2.css">
-<nav class="product-filter">
 
-  <h1>Dog Treats</h1>
+</head>
+<body>
+  <header class="main-header">
+<div id="menu">
+  <h1> Cool Treats </h1>
+  <nav role="navigation">
+      <ul class="main-nav">
+        <li class="selected"><a href="index.html">Home</a></li>
+        <li><a href="Welcome.html">Welcome</a></li>
+        <li><a href="History.html">History</a></li>
+        <li><a href="Menu2.html">Menu</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+  </nav>
+</div>
+</header> <!--/Main Header-->
+<body>
+<nav class="product-filter">
+  <h2>Dog Treats</h2>
 
   <div class="sort">
-
     <div class="collection-sort">
-      <label>Filter by:</label>
+      <label>Search Flavor:</label>
       <select>
-        <option value="/">All Dog Treats</option>
+        <option value="chicken-image">Chicken Flavor</option>
+        <option value="watermelon-image">Watermelon Flavor</option>
+        <option value="mustache-image">Bacon Flavor</option>
+        <option value="turkey2-image">Turkey Flavor</option>
       </select>
     </div>
 
     <div class="collection-sort">
-      <label>Sort by:</label>
+      <label>Search Price:</label>
       <select>
-        <option value="/">Featured</option>
+        <option value="/">$2.99</option>
+          <option value="/">$3.99</option>
       </select>
     </div>
-
-  </div>
 
 </nav>
 
 <section class="products">
 
-  <!-- It's likely you'll need to link the card somewhere. You could add a button in the info, link the titles, or even wrap the entire card in an <a href="..."> -->
+  <div class="container clearfix">
+     <div class="first col">
+       <br>
+       <figure>
+       <img class="product-image" src="img/chicken.JPG" alt="Chicken-image">
+       </figure>
+        <div class="product-info">
+       <h3>Chicken Flavor</h3></a>
+         <h4>$2.99</h4>
+       </div>
+     </div><!--/.first-->
 
-  <div class="product-card">
-    <div class="product-image">
-      <img src="img/chicken.JPG" id="chicken-image">
-    </div>
-    <div class="product-info">
-      <h5>Chicken flavor</h5>
-      <h6>$2.99</h6>
-    </div>
-  </div>
+     <div class="second col">
+       <br>
+       <figure>
+       <img class="product-image" src="img/watermelon.JPG" alt="Watermelon-image">
+       </figure>
+        <div class="product-info">
+       <h3>Watermelon Flavor</h3></a>
+           <h4>$3.99</h4>
+         </div>
+       </div><!--/.second-->
 
-  <div class="product-card">
-    <div class="product-image" id="beef-image">
-      <img src="img/beef.JPG">
-    </div>
-    <div class="product-info">
-      <h5>Beef flavor</h5>
-      <h6>$3.99</h6>
-    </div>
-  </div>
+       <div class="third col">
+         <br>
+         <figure>
+         <img class="product-image" src="img/mustache.JPG" alt="Mustage-image">
+         </figure>
+         <div class="product-info">
+         <h3>Bacon Flavor</h3></a>
+             <h4>$3.99</h4>
+           </div>
+         </div><!--/.third-->
 
-  <div class="product-card">
-    <div class="product-image" id="bacon-image">
-      <img src="img/bacon.JPG">
-    </div>
-    <div class="product-info">
-      <h5>Bacon flavor</h5>
-      <h6>$3.99</h6>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-image" id="turkey-image">
-      <img src="img/turkey.JPG">
-    </div>
-    <div class="product-info">
-      <h5>Turkey flavor</h5>
-      <h6>$2.99</h6>
-    </div>
-  </div>
-
-  <div class="product-card">
-    <div class="product-image" id="veggie">
-      <img src="img/veggie.jpg">
-    </div>
-    <div class="product-info">
-      <h5>Veggie flavor</h5>
-      <h6>$1.99</h6>
-    </div>
-  </div>
-
-</section>
+         <div class="fourth col">
+           <br>
+           <figure>
+           <img class="product-image" src="img/turkey2.JPG" alt="turkey2-image">
+           </figure>
+           <div class="product-info">
+           <h3>Turkey Flavor</h3></a>
+               <h4>$2.99</h4>
+             </div>
+           </div><!--/.fourth-->
+	</div><!--/.container-->

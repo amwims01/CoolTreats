@@ -1,0 +1,72 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <link rel="normalize.css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/history.css">
+  </head>
+    <header class="main-header">
+  <div id="menu">
+    <h1> Cool Treats </h1>
+    <nav role="navigation">
+        <ul class="main-nav">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="Welcome.html">Welcome</a></li>
+          <li><a href="History.html">History</a></li>
+          <li><a href="Menu2.html">Menu</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+</header> <!--/Main Header-->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Sign Up Form</title>
+          <link rel="stylesheet" href="css/styles.css">
+          <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+          <link rel="stylesheet" href="css/Contact.css">
+      </head>
+      <body>
+        <div class="maincontent">
+       <form action="Contact.html" method="post">
+
+         <h2>Sign Up for our Enewsletters</h2>
+         <fieldset>
+           <legend><span class="number">1</span>Your basic info</legend>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="user_name">
+         <labeL for="email">Email:</labeL>
+         <input type="email" id="mail" name="user_email">
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="user_password">
+
+           <label>Age of your dog:</label>
+           <input type="radio" id="under_2" value="under_2" name-"user_age"><label for="Under_2" class="light">under 2</label><br>
+           <input type="radio" ide="over_2" value="over_2" name-"user_age"><label for="over_2" class="light">2 or older</label>
+           </fieldset>
+         <fieldset>
+            <legend><span class="number">2</span>Your Dog's basic profile</legend>
+         <label for="Biography">Your Dog's Biography:</label>
+         <textarea id="bio" name="user_bio"></textarea>
+           <label for="type">Type of dog:</label>
+           <select id="type" name"user_type">
+
+           <option value="large">Large Dog >50lbs </option>
+             <option value="medium">Medium Dog < 50lbs > 10lbs </option>
+             <option value="small">Small Dog,< 10lbs </option>
+           </select>
+
+           <label>Interests:</label>
+           <input type="checkbox" id="dog health" value="dog health" name="dog health"><label class="light" for="dog health">Dog Health</label><br>
+           <input type="checkbox" id="dog training" value="dog training" name="dog training"><label class="light" for="dog training">Dog Training</label><br>
+           <input type="checkbox" id="dog community" value="dog community" name="dog community"><label class="light" for="dog community">Dog Community</label><br>
+
+         </fieldset>
+        <button type="submit">Sign UP</button>
+        </form>
+      </div>
+      </body>
+      <footer>
+        <p> For more information call us at 502-555-BARK or email us at info@cooltreats.com </P>
+      </footer>
+  </html>
