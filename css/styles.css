@@ -12,7 +12,7 @@ background-color: lightgrey;
 }
 
 h2 {
-text-align: left;
+text-align: center;
 color: skyblue;
 font-size: 25px;
 }
@@ -37,7 +37,6 @@ img {
 p {
 text-align: center;
 font-size: 40px;
-padding: 20px 0 0 20px;
 }
 
 body{
@@ -81,6 +80,16 @@ nav li {
   list-style-type: none;
 }
 
+.main-footer {
+	text-align: center;
+	background: lightgrey;
+	padding: 2em 0;
+	margin-top: 30px;
+	font-size: .8em;
+	border-top: 2px outset #000;
+	height: 100%;
+	box-shadow: 0px 500px 0px 500px lightgrey;
+}
 
 .container{
   text-align: center;
@@ -88,7 +97,26 @@ nav li {
   width: 100%;
 }
 
+#container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+#flexbox1, #flexbox2, #flexbox3, #flexbox4 {
+  width: 260px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 10px;
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+#flexbox1 h2 {
+  color: #333;
+}
+
 
 alert.{
 NOW this flavor available.
@@ -100,7 +128,7 @@ label{
 }
 
 .maincontent {
-  max-width: 80%;
+  max-width: 95%;
   margin: 280px auto 0 auto;
 }
 

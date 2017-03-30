@@ -1,25 +1,13 @@
 
-.product-filter {
-  display: flex;
-  margin: 150px 0 0 0;
-}
 
 .product-filter h2 {
-  line-height: inherit;
   text-align: center;
   color: skyblue;
   font-size: 40px;
-  margin: 25px 0 0 0;
 }
 
 .sort {
-  display: flex;
-  margin: 75px 0 0 0;
-}
-
-.collection-sort {
-  display: flex;
-  flex-direction: column;
+  margin: 15px 0 0 0;
 }
 
 .product-image {
@@ -30,32 +18,38 @@
 	  object-fit: cover;
 	}
 
-@media (max-width: 600px) {
-  .product-card {
-    flex: 1 46%;
-  }
+.hidden {
+  display:none;
 }
 
-@media (max-width: 480px) {
-  .product-filter {
-    flex-direction: column;
-  }
+.description {
+  background-color: skyblue;
+  border: 2px solid black;
+  border-radius: 3px;
+  font-size: 16px;
+  font-style: bold;
+  padding: 5px 0 5px 0;
+  margin: -15px auto 0 auto;
+  width: 220px;
 }
 
-@media (max-width: 480px) {
-  .product-filter {
-    flex-direction: column;
-  }
-  .sort {
-    align-self: flex-start;
-  }
+.menucontent {
+  margin: 300px auto 0 auto;
+  max-width: 1125px;
+  max-width: 85%;
 }
-@media (min-width: 600px) {
+
+/*For smaller screen*/
+@media (min-width: 540px) {
 
 	.container {
 		width: 90%;
 		margin: 0 auto;
 	}
+
+  .menucontent{
+    margin-top: 180px;
+  }
 
 	.col {
 		float: left;
@@ -81,7 +75,7 @@
 	}
 
 }
-
+/*For Larger Screen*/
 @media (min-width: 1025px) {
 
 	.container {
@@ -98,7 +92,7 @@
 	.third,
 	.fourth {
 		width: 25%;
-		margin-top: 50px;
+		margin-top: 20px;
 		margin-bottom: 50px;
 	}
 

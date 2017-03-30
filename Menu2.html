@@ -23,8 +23,9 @@
 </header> <!--/Main Header-->
 <body>
 <nav class="product-filter">
+  <div class="menucontent">
   <h2>Dog Treats</h2>
-
+    <h4>Click each image below for a short description!</h4>
   <div class="sort">
     <div class="collection-sort">
       <label>Search Flavor:</label>
@@ -35,6 +36,7 @@
         <option value="turkey2-image">Turkey Flavor</option>
       </select>
     </div>
+  </div>
 
     <div class="collection-sort">
       <label>Search Price:</label>
@@ -47,13 +49,15 @@
 </nav>
 
 <section class="products">
-
   <div class="container clearfix">
      <div class="first col">
-       <br>
+
        <figure>
        <img class="product-image" src="img/chicken.JPG" alt="Chicken-image">
+       <figcaption class="hidden description">An excellent chicken treat for your lovable canine!
+       </figcaption>
        </figure>
+
         <div class="product-info">
        <h3>Chicken Flavor</h3></a>
          <h4>$2.99</h4>
@@ -61,9 +65,10 @@
      </div><!--/.first-->
 
      <div class="second col">
-       <br>
        <figure>
        <img class="product-image" src="img/watermelon.JPG" alt="Watermelon-image">
+       <figcaption class="hidden description">An excellent watermelon treat for your lovable canine!
+       </figcaption>
        </figure>
         <div class="product-info">
        <h3>Watermelon Flavor</h3></a>
@@ -72,9 +77,10 @@
        </div><!--/.second-->
 
        <div class="third col">
-         <br>
          <figure>
          <img class="product-image" src="img/mustache.JPG" alt="Mustage-image">
+         <figcaption class="hidden description">An excellent bacon treat for your lovable canine!
+         </figcaption>
          </figure>
          <div class="product-info">
          <h3>Bacon Flavor</h3></a>
@@ -83,9 +89,10 @@
          </div><!--/.third-->
 
          <div class="fourth col">
-           <br>
            <figure>
            <img class="product-image" src="img/turkey2.JPG" alt="turkey2-image">
+           <figcaption class="hidden description">An excellent turkey treat for your lovable canine!
+           </figcaption>
            </figure>
            <div class="product-info">
            <h3>Turkey Flavor</h3></a>
@@ -93,3 +100,8 @@
              </div>
            </div><!--/.fourth-->
 	</div><!--/.container-->
+  <br>
+</body>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/menu2.js"></script>
+</html>
